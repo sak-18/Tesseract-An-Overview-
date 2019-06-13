@@ -1,6 +1,12 @@
-# header H1
-## header H2
-### header H3
-#### header H4
-##### header H5
-###### header H6
+#   Working of Tesseract(overview) - 
+An Outline by Saketh Vishnubhatla
+
+## Overview
+* Introduction to Tesseract
+* Architecture 
+* Line detection
+* Word detection
+* Word recognition
+* Character classification
+* Improvements made in tesseract4(LSTMs)
+* Results
