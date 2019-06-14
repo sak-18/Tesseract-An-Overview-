@@ -15,7 +15,7 @@ An Outline by Saketh Vishnubhatla
 Tesseract is an open-source OCR engine that was developed at HP between 1984 and 1994.In late 2005, HP released Tesseract for open source.
 
 ## 2. Architecure
-Tesseract does not have an inbuilt page layout analysis.It expects input as a preprocessed blob with polygonal text regions defined.
+Tesseract does not have an inbuilt page layout analysis. It expects input as a preprocessed blob with polygonal text regions defined.
 * The first step is a connected component analysis in which outlines of the components are stored.
 * Blobs are organized into text lines, and the lines and regions are analyzed for fixed pitch or proportional text.
 * Fixed pitch text is chopped immediately by character cells. Proportional text is broken into words using fuzzy spaces.
@@ -28,10 +28,9 @@ Tesseract does not have an inbuilt page layout analysis.It expects input as a pr
 ### Line finding
 * A percentile height filter removes drop-caps and vertically touching characters.
 * A similar median height filter is used to eliminate noises from the preprocessed blob.
->> A fraction of median height is choosen since only punctuations and noises have this height.
-*  Sorting and processing the filtered blobs by x-coordinate makes it
+* Sorting and processing the filtered blobs by x-coordinate makes it
 possible to assign blobs to a unique text line, while tracking the slope across the page, with greatly reduced danger of assigning to an incorrect text line in the presence of skew.
-
+>> A fraction of median height is choosen since only punctuations and noises have this height, and are removed in the process.
 ### Baseline Fitting
 *  The base lines are fit using quadratic spline, after finding lines.
 *  The baselines are fitted by partitioning the blobs into groups with a reasonably continuous displacement for the original straight baseline.
