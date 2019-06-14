@@ -10,7 +10,8 @@ An Outline by Saketh Vishnubhatla
 * Character classification
 * Improvements made in tesseract4(LSTMs)
 * Results
-
+* Limitations
+* Improvements
 ## 1. Introduction to Tesseract
 Tesseract is an open-source OCR engine that was developed at HP between 1984 and 1994.In late 2005, HP released Tesseract for open source.
 
@@ -74,3 +75,12 @@ static classifier normalizes characters by the centroid (first moments) for posi
 * These LSTMs take very long time to train.
 ## 8.Results
 ![](/img/result.png)
+
+## 9. Limitations
+* Uses polygonal approximation(time consuming)
+## 10. Improvements to be made
+* Accuracy may be improved by the addition of a hidden Markov based character n-gram model.
+* Possible improvement of chopper.
+## 11. References
+* [Reference slides](https://github.com/tesseract-ocr/docs/tree/master/das_tutorial2016)
+* [An Overview of Tesseract-Ray Smith](https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=1&ved=2ahUKEwjXgbb8mujiAhXHXCsKHQBOAiAQFjAAegQIAhAC&url=https%3A%2F%2Fresearch.google.com%2Fpubs%2Farchive%2F33418.pdf&usg=AOvVaw3MUJfEGXPwnQHIVc9SrO4E)
