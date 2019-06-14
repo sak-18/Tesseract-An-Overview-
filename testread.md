@@ -1,5 +1,5 @@
 #   Working of Tesseract(overview) - 
-An Outline by Saketh Vishnubhatla
+An Outline
 
 ## Overview
 * Introduction to Tesseract
