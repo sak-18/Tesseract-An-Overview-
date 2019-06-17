@@ -31,7 +31,7 @@ Tesseract does not have an inbuilt page layout analysis. It expects input as a p
 * A similar median height filter is used to eliminate noises from the preprocessed blob.
 * Sorting and processing the filtered blobs by x-coordinate makes it
 possible to assign blobs to a unique text line, while tracking the slope across the page, with greatly reduced danger of assigning to an incorrect text line in the presence of skew.
->> A fraction of median height is choosen since only punctuations and noises have this height, and are removed in the process.
+
 ### Baseline Fitting
 *  The base lines are fit using quadratic spline, after finding lines.
 *  The baselines are fitted by partitioning the blobs into groups with a reasonably continuous displacement for the original straight baseline.
